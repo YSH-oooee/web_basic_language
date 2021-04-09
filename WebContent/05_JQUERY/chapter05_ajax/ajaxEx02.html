@@ -55,7 +55,11 @@
 				type : "post",				//HTTP 요청방식
 				url : "ajaxEx02_pro.jsp",	//자료 전송 위치(통신 주소)
 				data : params,				//전송 할 데이터
-				success : function(res, status){			//통신 성공 시, 실행되는 이벤트
+				success : function(res, status){			//통신 성공 시, 실행되는 이벤트 
+					//function(n, m) >> m은 상태(success등)를 표시하므로 안써도 됌 / url의 jsp파일 내용 = res
+					alert("통신 성공");
+					alert(res);
+					alert(status);
 					$("#id").prop("disabled", true);
 					$("#pwd").prop("disabled", true);
 					$("#account").prop("disabled", true);

@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>haha</h1>
+	<h2>hhoo</h2>
 	<%
 		request.setCharacterEncoding("utf-8");
 	
